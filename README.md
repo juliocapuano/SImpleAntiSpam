@@ -1,11 +1,8 @@
 # SimpleAntiSpam
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
+[![Software License][ico-license]](LICENSE.md)
 
 this Package is focused in a simple field validation 
 
@@ -46,8 +43,8 @@ try{
     if(SimpleAntiSpam::isSpamIp([$ip]))
         throw new \Exception('ip is invalid or in black list')
     
-    if(SimpleAntiSpam::isSpamEmail($email))
-        throw new \Exception('email is invalid or in black list')
+    if(SimpleAntiSpam::isUrlInText($content))
+        throw new \Exception('is span text')
 
     // sendEmailOrSomeElse();
 
